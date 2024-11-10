@@ -1,0 +1,17 @@
+{
+  "name": "@lambdalisue/localfile-registry",
+  "version": "0.0.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "serve": "deno serve -A --port 6000 server.ts",
+    "test": "deno test -A --parallel --doc --shuffle",
+    "check": "deno check **/*.ts"
+  },
+  "imports": {
+    "@core/unknownutil": "jsr:@core/unknownutil@^4.3.0",
+    "@deno/graph": "jsr:@deno/graph@^0.84.1",
+    "@std/fs": "jsr:@std/fs@^1.0.5",
+    "@std/jsonc": "jsr:@std/jsonc@^1.0.1",
+    "@std/path": "jsr:@std/path@^1.0.8"
+  }
+}
